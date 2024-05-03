@@ -36,12 +36,23 @@
         });
 
         textArea.addEventListener('keyup', function(){
+<<<<<<< HEAD
             changeButtonsStatus(textArea.value.length > 0);
+=======
+            if (textArea.value.length > 0) {
+                countButton.removeAttribute('disabled');
+            } else {
+                countButton.setAttribute('disabled', 'disabled');
+            }
+>>>>>>> parent of daaa3d3 (reset button enabling/disabling added)
         });
 
         resetButton.addEventListener('click', function(){
             textArea.value = '';
+<<<<<<< HEAD
             changeButtonsStatus(false);
+=======
+>>>>>>> parent of daaa3d3 (reset button enabling/disabling added)
         });
 =======
 document.addEventListener('DOMContentLoaded', function(){
