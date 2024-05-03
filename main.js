@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (function(){
     let countSpaces = function(text) {
         let matches = text.matchAll(/\s/g);
@@ -42,5 +43,13 @@
             textArea.value = '';
             changeButtonsStatus(false);
         });
+=======
+document.addEventListener('DOMContentLoaded', function(){
+    let textArea = document.querySelector('#text');
+    let button = document.querySelector('#count-button');
+    button.addEventListener('click', function(){
+        let text = textArea.value;
+        alert('Длина текста: ' + text.length + ' символов');
+>>>>>>> parent of 1c9f8b8 (adding result field instead of alert)
     });
 }());
